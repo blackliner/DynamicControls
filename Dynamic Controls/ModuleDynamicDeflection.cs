@@ -113,7 +113,7 @@ namespace Dynamic_Controls
             {
                 return;
             }
-            currentDeflection = Mathf.Clamp(Evaluate(deflectionAtPressure, (float)vessel.dynamicPressurekPa) * aeroModule.GetDefaultMaxDeflect(), -89, 89);
+            currentDeflection = Mathf.Clamp(Evaluate(deflectionAtPressure, (float)vessel.dynamicPressurekPa) * aeroModule.GetDefaultMaxDeflect(), -150, 150);
             aeroModule.SetMaxDeflect(Math.Abs(currentDeflection));
         }
 

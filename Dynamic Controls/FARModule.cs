@@ -11,11 +11,6 @@ namespace Dynamic_Controls
             farValToSet = controlSurface.GetType().GetField("maxdeflect");
         }
 
-        public float GetMaxDeflect()
-        {
-            return (float)farValToSet.GetValue(controlSurface);
-        }
-
         public void SetMaxDeflect(float val)
         {
             farValToSet.SetValue(controlSurface, val);

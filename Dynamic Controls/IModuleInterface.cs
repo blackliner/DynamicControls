@@ -3,7 +3,6 @@
     public interface IModuleInterface
     {
         float GetDefaultMaxDeflect();
-        float GetMaxDeflect();
         void SetMaxDeflect(float val);
     }
 }

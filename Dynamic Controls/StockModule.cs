@@ -9,19 +9,14 @@ namespace Dynamic_Controls
             controlSurface = module;
         }
 
-        public float GetMaxDeflect()
-        {
-            return controlSurface.ctrlSurfaceRange;
-        }
-
         public void SetMaxDeflect(float val)
         {
-            controlSurface.ctrlSurfaceRange = val;
+            controlSurface.authorityLimiter = val;
         }
 
         public float GetDefaultMaxDeflect()
         {
-            return controlSurface.part.partInfo.partPrefab.Modules.GetModule<ModuleControlSurface>().ctrlSurfaceRange;
+            return 100;
         }
 
         private ModuleControlSurface controlSurface;
